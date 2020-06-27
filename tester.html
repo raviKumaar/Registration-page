@@ -1,0 +1,17 @@
+<html>
+<body>
+<h1>Adding 'a' and 'b'</h1>
+<form>
+  a: <input type="number" name="a" id="a"><br>
+  b: <input type="number" name="b" id="a"><br>
+  <button onclick="add(a,b)">Add</button>
+</form>
+<script>
+  function add(a,b) {
+    var sum = a + b;
+    alert(sum);
+    add(a,sum);
+  }
+</script>
+</body>
+</html>
